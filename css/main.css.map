@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAQ,6DAAqD,CCA7D,SAAW,CACV,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CAGZ,WAAY,CACV,UAAU,CAAE,iBAAiB,CAI/B,aAAc,CACb,WAAW,CAAE,oBAAoB,CACjC,SAAS,CAAE,KAAK,CACb,WAAW,CAAE,KAAK,CAClB,WAAW,CAAE,IAAI,CACjB,eAAE,CACD,KAAK,CAAE,KAAK,CACZ,eAAe,CAAE,IAAI",
-"sources": ["../sass/components/_typography.scss","../sass/components/_navBar.scss"],
-"names": [],
-"file": "main.css"
-}
