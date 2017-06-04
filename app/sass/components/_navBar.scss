@@ -13,11 +13,24 @@ html, body {
 	font-size: 100px;
     line-height: 155px;
     margin-left: 60px;
-
-    font-weight: 700;
+    font-weight: 800;
     a {
     	color: black;
     	text-decoration: none;
+        p {
+            visibility: hidden;
+            font-size: 23px;
+            line-height: 0;
+            font-weight: none;
+            font-family: 'Playfair Display', serif;
+            margin-top: -13px;
+        }
+        &:hover {
+            p {
+                visibility: visible;
+            }
+            
+        }
     }
 }
 
