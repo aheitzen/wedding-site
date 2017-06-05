@@ -1,5 +1,33 @@
-.blackHeaderFont {
+.whiteHeaderFont {
+	margin-top: 20px;
 	font-family: 'Oswald', sans-serif;
 	font-size: 100px;
     font-weight: 800;
+    color: white;
+    text-align: center;
 }
+
+.blackHeaderFont {
+	margin-top: 20px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 100px;
+    font-weight: 800;
+    color: $dark-blue;
+    text-align: center;
+}
+
+.split-screen {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white; 
+}
+
+// p {
+// 	text-align: center;
+// 	font-size: 23px;
+//     font-weight: none;
+//     font-family: 'Playfair Display', serif;
+// }
