@@ -14,7 +14,7 @@ html, body {
     line-height: 155px;
     margin-left: 60px;
     font-weight: 800;
-	opacity: 1;
+	
     a {
     	color: black;
     	text-decoration: none;
@@ -34,6 +34,9 @@ html, body {
         }
     }
 	&.not-hovered {
-		opacity: 0.5;
-	}
+        a {
+           color: $fade-color; 
+           transition: all 0.2s ease-in;
+        }
+    }
 }
