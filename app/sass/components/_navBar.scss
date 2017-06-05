@@ -1,11 +1,7 @@
 html, body {
 	height: 100%;
 	width: 100%;
-
-}
-.top-buffer {
-	 margin-top: calc(50% - 640px);
-
+    background-color: $dark-blue;
 }
 
 .homePageLink {
@@ -16,8 +12,9 @@ html, body {
     font-weight: 800;
 	
     a {
-    	color: black;
+    	color: white;
     	text-decoration: none;
+        transition: all 0.2s ease-out;
         p {
             visibility: hidden;
             font-size: 23px;
@@ -35,7 +32,7 @@ html, body {
     }
 	&.not-hovered {
         a {
-           color: $fade-color; 
+           color: $accent-color; 
            transition: all 0.2s ease-in;
         }
     }
