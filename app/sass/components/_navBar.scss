@@ -1,7 +1,14 @@
 html, body {
 	height: 100%;
 	width: 100%;
-    background-color: $dark-blue;
+    // background-color: $dark-blue;
+    background-color: black;
+}
+
+.container-fluid {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .homePageLink {
@@ -32,7 +39,7 @@ html, body {
     }
 	&.not-hovered {
         a {
-           color: $accent-color; 
+           color: $accent-color;  
            transition: all 0.2s ease-in;
         }
     }
