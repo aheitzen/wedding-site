@@ -5,11 +5,6 @@ export default class FormHandler {
 		this.error = ''
 		this.isReady = false
 		this.getRsvps()
-
-		this.buildFormData = this.buildFormData.bind(this)
-		this.verifyRsvp = this.verifyRsvp.bind(this)
-		this.addRsvp = this.addRsvp.bind(this)
-		this.getRsvps = this.getRsvps.bind(this)
 	}
 
 	buildFormData () {
