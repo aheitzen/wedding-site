@@ -1,4 +1,28 @@
+import FormHandler from './rsvpForm'
+
 $(document).ready(function () {
+	var formHandler = new FormHandler();
+
+	$('#rsvp-form').submit((e) => {
+		e.preventDefault();
+
+		var formData = formHandler.buildFormData()
+		formData.accepts = formData.accepts === 'accepts'
+
+		if (formHandler.isReady && formHandler.verifyRsvp(formData)) {
+			formHandler.addRsvp(formData).success(() => {
+				console.log('success')
+			}).error((error) => {
+				console.log('error', error)
+			}).done(() => {
+				console.log('done')
+			})
+		} else {
+			console.log(formHandler.error)
+			// invalid form message handler goes here
+		}
+	})
+
 	$('.homePageLink').hover(
 		function () {
 			setTimeout(() => {
