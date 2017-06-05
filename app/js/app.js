@@ -1,10 +1,16 @@
 $(document).ready(function () {
 	$('.homePageLink').hover(
 		function () {
-			$('.homePageLink').not(this).addClass('not-hovered')
+			var self = this;
+			setTimeout(function () {
+				$('.homePageLink').not(self).addClass('not-hovered');
+			}, 0);
 		},
 		function () {
-			$('.homePageLink').not(this).removeClass('not-hovered')
+			var self = this;
+			setTimeout(function () {
+				$('.homePageLink').not(self).removeClass('not-hovered');
+			}, 0);
 		}
-	)
-})
+	);
+});
