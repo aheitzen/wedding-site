@@ -1,29 +1,29 @@
-.whiteHeaderFont {
-	margin-top: 20px;
-	font-family: 'Oswald', sans-serif;
-	font-size: 100px;
-    font-weight: 800;
-    color: white;
-    text-align: center;
-}
+// .whiteHeaderFont {
+// 	margin-top: 20px;
+// 	font-family: 'Oswald', sans-serif;
+// 	font-size: 100px;
+//     font-weight: 800;
+//     color: white;
+//     text-align: center;
+// }
 
-.blackHeaderFont {
-	margin-top: 20px;
-	font-family: 'Oswald', sans-serif;
-	font-size: 100px;
-    font-weight: 800;
-    color: $dark-blue;
-    text-align: center;
-}
+// .blackHeaderFont {
+// 	margin-top: 20px;
+// 	font-family: 'Oswald', sans-serif;
+// 	font-size: 100px;
+//     font-weight: 800;
+//     color: $dark-blue;
+//     text-align: center;
+// }
 
-.split-screen {
-	position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: white; 
-}
+// .split-screen {
+// 	position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 50%;
+//     height: 100%;
+//     background-color: white; 
+// }
 
 // p {
 // 	text-align: center;
@@ -31,3 +31,45 @@
 //     font-weight: none;
 //     font-family: 'Playfair Display', serif;
 // }
+
+#totalGrid {
+	width: 100%;
+	height: 100%;
+}
+
+#myGrid {
+	display: grid;
+	width: 40%;
+	// grid-template-columns: repeat(1, 1fr);
+	// grid-template-rows: repeat(1, 1fr);
+}
+
+#jumboTextAlexa {
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 100px;
+}
+
+span {
+	color: white;
+	font-size: 17px;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+	color: white;
+	font-size: 40px;
+
+}
+
+#secondGrid {
+	display: grid;
+	width: 40%;
+}
+
+#jumboTextKen {
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 100px;
+}
+
