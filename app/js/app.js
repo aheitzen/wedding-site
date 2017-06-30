@@ -1,7 +1,9 @@
 import FormHandler from './rsvpForm'
+import Accomodations from './accommodations'
 
 $(document).ready(function () {
-	var formHandler = new FormHandler();
+	var formHandler = new FormHandler(),
+		accommodations = new Accomodations()
 
 	$('#rsvp-form').submit((e) => {
 		e.preventDefault();
