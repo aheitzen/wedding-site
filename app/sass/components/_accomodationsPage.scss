@@ -7,29 +7,68 @@
 		display: flex;
 		&.slide {
 			display: block;
+			position: relative;
 			li {
-				width: 33.3%;
+				position: absolute;
+				width: calc(33.3% - 20px);
+				height: calc(100% - 60px);
+				top: 30px;
+				&:first-of-type {
+					left: 30px;
+				}
+				&:nth-of-type(2) {
+					left: calc(33.3% + 10px);
+				}
+				&:last-of-type {
+					left: 66.6%;
+				}
+				animation: slideLeft 1s ease-in 0s 1 normal forwards;
 			}
 		}
 		li {
 			flex: 1;
 			height: 100%;
 			position: relative;
+			overflow: hidden;
 			p {
+				font-family: 'Oswald', sans-serif;
+				font-size: 100px;
+				line-height: 150px;
+				text-transform: uppercase;
+				font-weight: 800;
 				margin: 0;
 				width: 100%;
 				text-align: center;
 				position: absolute;
-				top: calc(50% - 26px);
+				top: calc(50% - 98px); 
 				-webkit-transform: rotate(270deg);
 				-moz-transform: rotate(270deg);
 				-ms-transform: rotate(270deg);
 				transform: rotate(270deg);
+				cursor: pointer;
 			}
-			&.hide {
-				display: none;
+			&.slideDown {
+				p {
+					animation: slideDown 1s ease-out 0s 1 normal forwards;
+				}
 			}
 		}
+	}
+}
 
+@keyframes slideDown {
+	from {
+		position: absolute;
+		transform: rotate(270deg) translateX(0);
+	}
+	to {
+		position: absolute;
+		transform: rotate(270deg) translateX(-300%);
+	}
+}
+
+@keyframes slideLeft {
+	to {
+		left: 30px;
 	}
 }

@@ -6,8 +6,12 @@ export default class Accomodations {
 	}
 
 	itemClicked(e) {
-		this.items.not(e.currentTarget).addClass('hide')
-		$(e.currentTarget).parent().addClass('slide')
+		this.items.not(e.currentTarget).addClass('slideDown')
+
+		setTimeout(() => {
+			this.items.not(e.currentTarget).addClass('hide')
+			$(e.currentTarget).parent().addClass('slide')
+		}, 500)
 	}
 
 }
