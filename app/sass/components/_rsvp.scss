@@ -1,0 +1,65 @@
+// p#rsvp {
+// 	// font-family: 'Oswald', sans-serif;
+// 	// font-size: 100px;
+//  //    line-height: 155px;
+//  //    margin-left: 60px;
+//  //    font-weight: 800;
+//  //    color: white;
+//  color: white;
+// 	font-family: 'Oswald', sans-serif;
+// 	font-size: 100px;
+// }
+
+#whiteJumboText {
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	font-size: 150px;
+	margin-left: 52px;
+	margin-top: 9%;
+}
+
+p {
+	color: black;
+	font-size: 24.5px;
+    font-family: 'Playfair Display', serif;
+    margin-left: 60px;
+}
+ #rsvpInput {
+ 	max-width: 450px;
+ 	margin-left: 60px;
+ 	border-radius: 0;
+ 	// background-color: #f2f2f2;
+ 	background-color: rgba(100,100,100,0.09);
+ 	border-color: #e3e3e3;
+ 	border-width: 1px;
+}
+
+.radio {
+	margin-left: 60px;
+	label {
+		font-weight: bold;
+	    font-size: 17px;
+	    text-transform: lowercase;
+	    cursor: pointer;
+	    color: black;
+	    font-family: 'Playfair Display', serif;
+	}
+}
+
+
+.btn.btn-success {
+	margin-left: 60px;
+	border: 3px solid  #99ceff;
+	border-radius: 0;
+	background-color:  #99ceff;
+	font-family: 'Playfair Display', serif;
+	letter-spacing: 2px;
+    font-size: 20px;
+    text-transform: lowercase;
+    margin-left: 60px;
+    &:hover {
+    	background-color: transparent;
+    	border: 3px solid #99ceff;
+    	color: black;
+    }
+}

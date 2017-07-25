@@ -1,8 +1,10 @@
 html, body {
 	height: 100%;
 	width: 100%;
-    background-color: $dark-blue;
+    // background-color: $dark-blue;
     // background-color: black;
+    // background-color: white;
+    background-image: url("../app/dist/assets/images/gaming-pattern.png");
 }
 
 .container-fluid {
@@ -19,7 +21,7 @@ html, body {
     font-weight: 800;
 	
     a {
-    	color: white;
+    	color: black;
     	text-decoration: none;
         transition: all 0.2s ease-out;
         p {
